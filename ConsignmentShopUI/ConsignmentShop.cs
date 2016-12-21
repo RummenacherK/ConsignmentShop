@@ -47,42 +47,42 @@ namespace ConsignmentShopUI
 
         private void SetUpData()
         {
-            store.Vendors.Add(new Vendor { FirstName = "Bill", LastName = "Smith" });
-            store.Vendors.Add(new Vendor { FirstName = "Sue", LastName = "Jones", });
+            store.Vendors.Add(new Vendor { FirstName = "Mike", LastName = "Pence" });
+            store.Vendors.Add(new Vendor { FirstName = "Exxon", LastName = "Mobil", });
 
             store.Items.Add(new Item
             {
-                Title = "Moby Dick",
-                Description = "A book about a whale",
-                Price = 4.50M,
+                Title = "Racing Yacht",
+                Description = "A Yuge Boat",
+                Price = 450.000M,
                 Owner = store.Vendors[0]
             });
 
             store.Items.Add(new Item
             {
-                Title = "A Tale of Two Cities",
-                Description = "A book about a revolution",
-                Price = 3.80M,
+                Title = "Penthouse Suite",
+                Description = "A Yuge Apartment",
+                Price = 380.000M,
                 Owner = store.Vendors[1]
             });
 
             store.Items.Add(new Item
             {
-                Title = "Harry Potter Book 1",
-                Description = "A book about a boy",
-                Price = 5.20M,
+                Title = "Private Jet",
+                Description = "For Flying to China",
+                Price = 520.000M,
                 Owner = store.Vendors[1]
             });
 
             store.Items.Add(new Item
             {
-                Title = "Jane Eyre",
-                Description = "A book about a girl",
-                Price = 1.50M,
+                Title = "Yuge Wall",
+                Description = "A Yuge Wall",
+                Price = 150.000M,
                 Owner = store.Vendors[0]
             });
 
-            store.Name = "Seconds are Better";
+            store.Name = "Trump Change";
         }
 
         private void addToCart_Click(object sender, EventArgs e)
@@ -122,6 +122,16 @@ namespace ConsignmentShopUI
             cartBinding.ResetBindings(false);
             itemsBinding.ResetBindings(false);
             vendorBinding.ResetBindings(false);
+        }
+
+        private void ConsignmentShop_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void storeProfitValue_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
