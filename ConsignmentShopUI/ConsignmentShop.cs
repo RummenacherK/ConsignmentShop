@@ -124,13 +124,16 @@ namespace ConsignmentShopUI
             vendorBinding.ResetBindings(false);
         }
 
-        private void ConsignmentShop_Load(object sender, EventArgs e)
+        private void storeProfitValue_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void storeProfitValue_Click(object sender, EventArgs e)
+        private void budgetBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
+            this.Validate();
+            this.budgetBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.purplecobrasDataSet);
 
         }
     }

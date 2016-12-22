@@ -73,6 +73,11 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purplecobrasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>purplecobrasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TestTable.cs" />
     <EmbeddedResource Include="ConsignmentShop.resx">
       <DependentUpon>ConsignmentShop.cs</DependentUpon>
@@ -99,6 +104,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="purplecobrasDataSet.xsc">
+      <DependentUpon>purplecobrasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="purplecobrasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>purplecobrasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="purplecobrasDataSet.xss">
+      <DependentUpon>purplecobrasDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
