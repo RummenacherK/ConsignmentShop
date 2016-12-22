@@ -82,6 +82,22 @@ namespace ConsignmentShopUI
                 Owner = store.Vendors[0]
             });
 
+            store.Items.Add(new Item
+            {
+                Title = "Influence",
+                Description = "Yes",
+                Price = 670.000M,
+                Owner = store.Vendors[0]
+            });
+
+            store.Items.Add(new Item
+            {
+                Title = "Access",
+                Description = "Again",
+                Price = 980.000M,
+                Owner = store.Vendors[0]
+            });
+
             store.Name = "Trump Change";
         }
 
