@@ -798,13 +798,13 @@ namespace ConsignmentShopUI {
             
             private global::System.Data.DataColumn columnId;
             
-            private global::System.Data.DataColumn columnIncome;
+            private global::System.Data.DataColumn columnName;
             
-            private global::System.Data.DataColumn columnRent;
+            private global::System.Data.DataColumn columnDescription;
             
-            private global::System.Data.DataColumn columnCar;
+            private global::System.Data.DataColumn columnPrice;
             
-            private global::System.Data.DataColumn columnFood;
+            private global::System.Data.DataColumn columnYuge;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -849,33 +849,33 @@ namespace ConsignmentShopUI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn IncomeColumn {
+            public global::System.Data.DataColumn NameColumn {
                 get {
-                    return this.columnIncome;
+                    return this.columnName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn RentColumn {
+            public global::System.Data.DataColumn DescriptionColumn {
                 get {
-                    return this.columnRent;
+                    return this.columnDescription;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CarColumn {
+            public global::System.Data.DataColumn PriceColumn {
                 get {
-                    return this.columnCar;
+                    return this.columnPrice;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FoodColumn {
+            public global::System.Data.DataColumn YugeColumn {
                 get {
-                    return this.columnFood;
+                    return this.columnYuge;
                 }
             }
             
@@ -916,14 +916,14 @@ namespace ConsignmentShopUI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BudgetRow AddBudgetRow(int Id, string Income, string Rent, string Car, string Food) {
+            public BudgetRow AddBudgetRow(int Id, string Name, string Description, string Price, string Yuge) {
                 BudgetRow rowBudgetRow = ((BudgetRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
-                        Income,
-                        Rent,
-                        Car,
-                        Food};
+                        Name,
+                        Description,
+                        Price,
+                        Yuge};
                 rowBudgetRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowBudgetRow);
                 return rowBudgetRow;
@@ -954,10 +954,10 @@ namespace ConsignmentShopUI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnId = base.Columns["Id"];
-                this.columnIncome = base.Columns["Income"];
-                this.columnRent = base.Columns["Rent"];
-                this.columnCar = base.Columns["Car"];
-                this.columnFood = base.Columns["Food"];
+                this.columnName = base.Columns["Name"];
+                this.columnDescription = base.Columns["Description"];
+                this.columnPrice = base.Columns["Price"];
+                this.columnYuge = base.Columns["Yuge"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -965,22 +965,22 @@ namespace ConsignmentShopUI {
             private void InitClass() {
                 this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnId);
-                this.columnIncome = new global::System.Data.DataColumn("Income", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIncome);
-                this.columnRent = new global::System.Data.DataColumn("Rent", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRent);
-                this.columnCar = new global::System.Data.DataColumn("Car", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCar);
-                this.columnFood = new global::System.Data.DataColumn("Food", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFood);
+                this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnName);
+                this.columnDescription = new global::System.Data.DataColumn("Description", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescription);
+                this.columnPrice = new global::System.Data.DataColumn("Price", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPrice);
+                this.columnYuge = new global::System.Data.DataColumn("Yuge", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnYuge);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AllowDBNull = false;
                 this.columnId.Unique = true;
-                this.columnIncome.MaxLength = 50;
-                this.columnRent.MaxLength = 50;
-                this.columnCar.MaxLength = 50;
-                this.columnFood.MaxLength = 50;
+                this.columnName.MaxLength = 50;
+                this.columnDescription.MaxLength = 50;
+                this.columnPrice.MaxLength = 50;
+                this.columnYuge.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2694,114 +2694,114 @@ namespace ConsignmentShopUI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Income {
+            public string Name {
                 get {
                     try {
-                        return ((string)(this[this.tableBudget.IncomeColumn]));
+                        return ((string)(this[this.tableBudget.NameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Income\' in table \'Budget\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Name\' in table \'Budget\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBudget.IncomeColumn] = value;
+                    this[this.tableBudget.NameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Rent {
+            public string Description {
                 get {
                     try {
-                        return ((string)(this[this.tableBudget.RentColumn]));
+                        return ((string)(this[this.tableBudget.DescriptionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Rent\' in table \'Budget\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Description\' in table \'Budget\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBudget.RentColumn] = value;
+                    this[this.tableBudget.DescriptionColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Car {
+            public string Price {
                 get {
                     try {
-                        return ((string)(this[this.tableBudget.CarColumn]));
+                        return ((string)(this[this.tableBudget.PriceColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Car\' in table \'Budget\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Price\' in table \'Budget\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBudget.CarColumn] = value;
+                    this[this.tableBudget.PriceColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Food {
+            public string Yuge {
                 get {
                     try {
-                        return ((string)(this[this.tableBudget.FoodColumn]));
+                        return ((string)(this[this.tableBudget.YugeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Food\' in table \'Budget\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Yuge\' in table \'Budget\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBudget.FoodColumn] = value;
+                    this[this.tableBudget.YugeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsIncomeNull() {
-                return this.IsNull(this.tableBudget.IncomeColumn);
+            public bool IsNameNull() {
+                return this.IsNull(this.tableBudget.NameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetIncomeNull() {
-                this[this.tableBudget.IncomeColumn] = global::System.Convert.DBNull;
+            public void SetNameNull() {
+                this[this.tableBudget.NameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsRentNull() {
-                return this.IsNull(this.tableBudget.RentColumn);
+            public bool IsDescriptionNull() {
+                return this.IsNull(this.tableBudget.DescriptionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetRentNull() {
-                this[this.tableBudget.RentColumn] = global::System.Convert.DBNull;
+            public void SetDescriptionNull() {
+                this[this.tableBudget.DescriptionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCarNull() {
-                return this.IsNull(this.tableBudget.CarColumn);
+            public bool IsPriceNull() {
+                return this.IsNull(this.tableBudget.PriceColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCarNull() {
-                this[this.tableBudget.CarColumn] = global::System.Convert.DBNull;
+            public void SetPriceNull() {
+                this[this.tableBudget.PriceColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFoodNull() {
-                return this.IsNull(this.tableBudget.FoodColumn);
+            public bool IsYugeNull() {
+                return this.IsNull(this.tableBudget.YugeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFoodNull() {
-                this[this.tableBudget.FoodColumn] = global::System.Convert.DBNull;
+            public void SetYugeNull() {
+                this[this.tableBudget.YugeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4048,10 +4048,10 @@ SELECT MigrationId, ContextKey, Model, ProductVersion FROM __MigrationHistory WH
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Budget";
             tableMapping.ColumnMappings.Add("Id", "Id");
-            tableMapping.ColumnMappings.Add("Income", "Income");
-            tableMapping.ColumnMappings.Add("Rent", "Rent");
-            tableMapping.ColumnMappings.Add("Car", "Car");
-            tableMapping.ColumnMappings.Add("Food", "Food");
+            tableMapping.ColumnMappings.Add("Income", "Name");
+            tableMapping.ColumnMappings.Add("Description", "Description");
+            tableMapping.ColumnMappings.Add("Car", "Price");
+            tableMapping.ColumnMappings.Add("Food", "Yuge");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;

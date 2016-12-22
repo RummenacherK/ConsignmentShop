@@ -40,12 +40,12 @@
             this.vendorListBox = new System.Windows.Forms.ListBox();
             this.storePayoutLabel = new System.Windows.Forms.Label();
             this.storeProfitValue = new System.Windows.Forms.Label();
-            this.purplecobrasDataSet = new ConsignmentShopUI.purplecobrasDataSet();
             this.budgetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purplecobrasDataSet = new ConsignmentShopUI.purplecobrasDataSet();
             this.budgetTableAdapter = new ConsignmentShopUI.purplecobrasDataSetTableAdapters.BudgetTableAdapter();
             this.tableAdapterManager = new ConsignmentShopUI.purplecobrasDataSetTableAdapters.TableAdapterManager();
-            ((System.ComponentModel.ISupportInitialize)(this.purplecobrasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.budgetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purplecobrasDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // headerText
@@ -164,15 +164,15 @@
             this.storeProfitValue.Text = "$0.00";
             this.storeProfitValue.Click += new System.EventHandler(this.storeProfitValue_Click);
             // 
-            // purplecobrasDataSet
-            // 
-            this.purplecobrasDataSet.DataSetName = "purplecobrasDataSet";
-            this.purplecobrasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // budgetBindingSource
             // 
             this.budgetBindingSource.DataMember = "Budget";
             this.budgetBindingSource.DataSource = this.purplecobrasDataSet;
+            // 
+            // purplecobrasDataSet
+            // 
+            this.purplecobrasDataSet.DataSetName = "purplecobrasDataSet";
+            this.purplecobrasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // budgetTableAdapter
             // 
@@ -195,7 +195,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1035, 653);
+            this.ClientSize = new System.Drawing.Size(1035, 764);
             this.Controls.Add(this.storeProfitValue);
             this.Controls.Add(this.storePayoutLabel);
             this.Controls.Add(this.vendorListboxLabel);
@@ -211,8 +211,8 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "ConsignmentShop";
             this.Text = "Trump Change";
-            ((System.ComponentModel.ISupportInitialize)(this.purplecobrasDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.budgetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purplecobrasDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

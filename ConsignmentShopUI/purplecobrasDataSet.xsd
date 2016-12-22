@@ -127,10 +127,10 @@ SELECT Id, Income, Rent, Car, Food FROM Budget WHERE (Id = @Id)</CommandText>
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="Id" DataSetColumn="Id" />
-              <Mapping SourceColumn="Income" DataSetColumn="Income" />
-              <Mapping SourceColumn="Rent" DataSetColumn="Rent" />
-              <Mapping SourceColumn="Car" DataSetColumn="Car" />
-              <Mapping SourceColumn="Food" DataSetColumn="Food" />
+              <Mapping SourceColumn="Income" DataSetColumn="Name" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Car" DataSetColumn="Price" />
+              <Mapping SourceColumn="Food" DataSetColumn="Yuge" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -412,7 +412,7 @@ SELECT Id, Name, Address, Age, Gender, PhoneNumber FROM TestTable WHERE (Id = @I
   <xs:element name="purplecobrasDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="purplecobrasDataSet" msprop:Generator_UserDSName="purplecobrasDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="__MigrationHistory" msprop:Generator_TableClassName="__MigrationHistoryDataTable" msprop:Generator_TableVarName="table__MigrationHistory" msprop:Generator_TablePropName="__MigrationHistory" msprop:Generator_RowDeletingName="__MigrationHistoryRowDeleting" msprop:Generator_RowChangingName="__MigrationHistoryRowChanging" msprop:Generator_RowEvHandlerName="__MigrationHistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="__MigrationHistoryRowDeleted" msprop:Generator_UserTableName="__MigrationHistory" msprop:Generator_RowChangedName="__MigrationHistoryRowChanged" msprop:Generator_RowEvArgName="__MigrationHistoryRowChangeEvent" msprop:Generator_RowClassName="__MigrationHistoryRow">
+        <xs:element name="__MigrationHistory" msprop:Generator_TableClassName="__MigrationHistoryDataTable" msprop:Generator_TableVarName="table__MigrationHistory" msprop:Generator_RowChangedName="__MigrationHistoryRowChanged" msprop:Generator_TablePropName="__MigrationHistory" msprop:Generator_RowDeletingName="__MigrationHistoryRowDeleting" msprop:Generator_RowChangingName="__MigrationHistoryRowChanging" msprop:Generator_RowEvHandlerName="__MigrationHistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="__MigrationHistoryRowDeleted" msprop:Generator_RowClassName="__MigrationHistoryRow" msprop:Generator_UserTableName="__MigrationHistory" msprop:Generator_RowEvArgName="__MigrationHistoryRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MigrationId" msprop:Generator_ColumnVarNameInTable="columnMigrationId" msprop:Generator_ColumnPropNameInRow="MigrationId" msprop:Generator_ColumnPropNameInTable="MigrationIdColumn" msprop:Generator_UserColumnName="MigrationId">
@@ -440,32 +440,32 @@ SELECT Id, Name, Address, Age, Gender, PhoneNumber FROM TestTable WHERE (Id = @I
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Budget" msprop:Generator_TableClassName="BudgetDataTable" msprop:Generator_TableVarName="tableBudget" msprop:Generator_TablePropName="Budget" msprop:Generator_RowDeletingName="BudgetRowDeleting" msprop:Generator_RowChangingName="BudgetRowChanging" msprop:Generator_RowEvHandlerName="BudgetRowChangeEventHandler" msprop:Generator_RowDeletedName="BudgetRowDeleted" msprop:Generator_UserTableName="Budget" msprop:Generator_RowChangedName="BudgetRowChanged" msprop:Generator_RowEvArgName="BudgetRowChangeEvent" msprop:Generator_RowClassName="BudgetRow">
+        <xs:element name="Budget" msprop:Generator_TableClassName="BudgetDataTable" msprop:Generator_TableVarName="tableBudget" msprop:Generator_RowChangedName="BudgetRowChanged" msprop:Generator_TablePropName="Budget" msprop:Generator_RowDeletingName="BudgetRowDeleting" msprop:Generator_RowChangingName="BudgetRowChanging" msprop:Generator_RowEvHandlerName="BudgetRowChangeEventHandler" msprop:Generator_RowDeletedName="BudgetRowDeleted" msprop:Generator_RowClassName="BudgetRow" msprop:Generator_UserTableName="Budget" msprop:Generator_RowEvArgName="BudgetRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
-              <xs:element name="Income" msprop:Generator_ColumnVarNameInTable="columnIncome" msprop:Generator_ColumnPropNameInRow="Income" msprop:Generator_ColumnPropNameInTable="IncomeColumn" msprop:Generator_UserColumnName="Income" minOccurs="0">
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Rent" msprop:Generator_ColumnVarNameInTable="columnRent" msprop:Generator_ColumnPropNameInRow="Rent" msprop:Generator_ColumnPropNameInTable="RentColumn" msprop:Generator_UserColumnName="Rent" minOccurs="0">
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Car" msprop:Generator_ColumnVarNameInTable="columnCar" msprop:Generator_ColumnPropNameInRow="Car" msprop:Generator_ColumnPropNameInTable="CarColumn" msprop:Generator_UserColumnName="Car" minOccurs="0">
+              <xs:element name="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Food" msprop:Generator_ColumnVarNameInTable="columnFood" msprop:Generator_ColumnPropNameInRow="Food" msprop:Generator_ColumnPropNameInTable="FoodColumn" msprop:Generator_UserColumnName="Food" minOccurs="0">
+              <xs:element name="Yuge" msprop:Generator_ColumnVarNameInTable="columnYuge" msprop:Generator_ColumnPropNameInRow="Yuge" msprop:Generator_ColumnPropNameInTable="YugeColumn" msprop:Generator_UserColumnName="Yuge" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -475,7 +475,7 @@ SELECT Id, Name, Address, Age, Gender, PhoneNumber FROM TestTable WHERE (Id = @I
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="InventoryImage" msprop:Generator_TableClassName="InventoryImageDataTable" msprop:Generator_TableVarName="tableInventoryImage" msprop:Generator_TablePropName="InventoryImage" msprop:Generator_RowDeletingName="InventoryImageRowDeleting" msprop:Generator_RowChangingName="InventoryImageRowChanging" msprop:Generator_RowEvHandlerName="InventoryImageRowChangeEventHandler" msprop:Generator_RowDeletedName="InventoryImageRowDeleted" msprop:Generator_UserTableName="InventoryImage" msprop:Generator_RowChangedName="InventoryImageRowChanged" msprop:Generator_RowEvArgName="InventoryImageRowChangeEvent" msprop:Generator_RowClassName="InventoryImageRow">
+        <xs:element name="InventoryImage" msprop:Generator_TableClassName="InventoryImageDataTable" msprop:Generator_TableVarName="tableInventoryImage" msprop:Generator_RowChangedName="InventoryImageRowChanged" msprop:Generator_TablePropName="InventoryImage" msprop:Generator_RowDeletingName="InventoryImageRowDeleting" msprop:Generator_RowChangingName="InventoryImageRowChanging" msprop:Generator_RowEvHandlerName="InventoryImageRowChangeEventHandler" msprop:Generator_RowDeletedName="InventoryImageRowDeleted" msprop:Generator_RowClassName="InventoryImageRow" msprop:Generator_UserTableName="InventoryImage" msprop:Generator_RowEvArgName="InventoryImageRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Inventory_ImageId" msprop:Generator_ColumnVarNameInTable="columnInventory_ImageId" msprop:Generator_ColumnPropNameInRow="Inventory_ImageId" msprop:Generator_ColumnPropNameInTable="Inventory_ImageIdColumn" msprop:Generator_UserColumnName="Inventory_ImageId" type="xs:int" />
@@ -496,7 +496,7 @@ SELECT Id, Name, Address, Age, Gender, PhoneNumber FROM TestTable WHERE (Id = @I
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="InventoryTestTable" msprop:Generator_TableClassName="InventoryTestTableDataTable" msprop:Generator_TableVarName="tableInventoryTestTable" msprop:Generator_TablePropName="InventoryTestTable" msprop:Generator_RowDeletingName="InventoryTestTableRowDeleting" msprop:Generator_RowChangingName="InventoryTestTableRowChanging" msprop:Generator_RowEvHandlerName="InventoryTestTableRowChangeEventHandler" msprop:Generator_RowDeletedName="InventoryTestTableRowDeleted" msprop:Generator_UserTableName="InventoryTestTable" msprop:Generator_RowChangedName="InventoryTestTableRowChanged" msprop:Generator_RowEvArgName="InventoryTestTableRowChangeEvent" msprop:Generator_RowClassName="InventoryTestTableRow">
+        <xs:element name="InventoryTestTable" msprop:Generator_TableClassName="InventoryTestTableDataTable" msprop:Generator_TableVarName="tableInventoryTestTable" msprop:Generator_RowChangedName="InventoryTestTableRowChanged" msprop:Generator_TablePropName="InventoryTestTable" msprop:Generator_RowDeletingName="InventoryTestTableRowDeleting" msprop:Generator_RowChangingName="InventoryTestTableRowChanging" msprop:Generator_RowEvHandlerName="InventoryTestTableRowChangeEventHandler" msprop:Generator_RowDeletedName="InventoryTestTableRowDeleted" msprop:Generator_RowClassName="InventoryTestTableRow" msprop:Generator_UserTableName="InventoryTestTable" msprop:Generator_RowEvArgName="InventoryTestTableRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -517,7 +517,7 @@ SELECT Id, Name, Address, Age, Gender, PhoneNumber FROM TestTable WHERE (Id = @I
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="InventoryTestTableBen" msprop:Generator_TableClassName="InventoryTestTableBenDataTable" msprop:Generator_TableVarName="tableInventoryTestTableBen" msprop:Generator_TablePropName="InventoryTestTableBen" msprop:Generator_RowDeletingName="InventoryTestTableBenRowDeleting" msprop:Generator_RowChangingName="InventoryTestTableBenRowChanging" msprop:Generator_RowEvHandlerName="InventoryTestTableBenRowChangeEventHandler" msprop:Generator_RowDeletedName="InventoryTestTableBenRowDeleted" msprop:Generator_UserTableName="InventoryTestTableBen" msprop:Generator_RowChangedName="InventoryTestTableBenRowChanged" msprop:Generator_RowEvArgName="InventoryTestTableBenRowChangeEvent" msprop:Generator_RowClassName="InventoryTestTableBenRow">
+        <xs:element name="InventoryTestTableBen" msprop:Generator_TableClassName="InventoryTestTableBenDataTable" msprop:Generator_TableVarName="tableInventoryTestTableBen" msprop:Generator_RowChangedName="InventoryTestTableBenRowChanged" msprop:Generator_TablePropName="InventoryTestTableBen" msprop:Generator_RowDeletingName="InventoryTestTableBenRowDeleting" msprop:Generator_RowChangingName="InventoryTestTableBenRowChanging" msprop:Generator_RowEvHandlerName="InventoryTestTableBenRowChangeEventHandler" msprop:Generator_RowDeletedName="InventoryTestTableBenRowDeleted" msprop:Generator_RowClassName="InventoryTestTableBenRow" msprop:Generator_UserTableName="InventoryTestTableBen" msprop:Generator_RowEvArgName="InventoryTestTableBenRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -538,7 +538,7 @@ SELECT Id, Name, Address, Age, Gender, PhoneNumber FROM TestTable WHERE (Id = @I
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Test" msprop:Generator_TableClassName="TestDataTable" msprop:Generator_TableVarName="tableTest" msprop:Generator_TablePropName="Test" msprop:Generator_RowDeletingName="TestRowDeleting" msprop:Generator_RowChangingName="TestRowChanging" msprop:Generator_RowEvHandlerName="TestRowChangeEventHandler" msprop:Generator_RowDeletedName="TestRowDeleted" msprop:Generator_UserTableName="Test" msprop:Generator_RowChangedName="TestRowChanged" msprop:Generator_RowEvArgName="TestRowChangeEvent" msprop:Generator_RowClassName="TestRow">
+        <xs:element name="Test" msprop:Generator_TableClassName="TestDataTable" msprop:Generator_TableVarName="tableTest" msprop:Generator_RowChangedName="TestRowChanged" msprop:Generator_TablePropName="Test" msprop:Generator_RowDeletingName="TestRowDeleting" msprop:Generator_RowChangingName="TestRowChanging" msprop:Generator_RowEvHandlerName="TestRowChangeEventHandler" msprop:Generator_RowDeletedName="TestRowDeleted" msprop:Generator_RowClassName="TestRow" msprop:Generator_UserTableName="Test" msprop:Generator_RowEvArgName="TestRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -559,7 +559,7 @@ SELECT Id, Name, Address, Age, Gender, PhoneNumber FROM TestTable WHERE (Id = @I
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TestTable" msprop:Generator_TableClassName="TestTableDataTable" msprop:Generator_TableVarName="tableTestTable" msprop:Generator_TablePropName="TestTable" msprop:Generator_RowDeletingName="TestTableRowDeleting" msprop:Generator_RowChangingName="TestTableRowChanging" msprop:Generator_RowEvHandlerName="TestTableRowChangeEventHandler" msprop:Generator_RowDeletedName="TestTableRowDeleted" msprop:Generator_UserTableName="TestTable" msprop:Generator_RowChangedName="TestTableRowChanged" msprop:Generator_RowEvArgName="TestTableRowChangeEvent" msprop:Generator_RowClassName="TestTableRow">
+        <xs:element name="TestTable" msprop:Generator_TableClassName="TestTableDataTable" msprop:Generator_TableVarName="tableTestTable" msprop:Generator_RowChangedName="TestTableRowChanged" msprop:Generator_TablePropName="TestTable" msprop:Generator_RowDeletingName="TestTableRowDeleting" msprop:Generator_RowChangingName="TestTableRowChanging" msprop:Generator_RowEvHandlerName="TestTableRowChangeEventHandler" msprop:Generator_RowDeletedName="TestTableRowDeleted" msprop:Generator_RowClassName="TestTableRow" msprop:Generator_UserTableName="TestTable" msprop:Generator_RowEvArgName="TestTableRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
