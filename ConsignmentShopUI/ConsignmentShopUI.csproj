@@ -81,6 +81,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>purplecobrasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="purplecobrasDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>purplecobrasDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TestTable.cs" />
     <EmbeddedResource Include="ConsignmentShop.resx">
       <DependentUpon>ConsignmentShop.cs</DependentUpon>
@@ -117,6 +122,17 @@
     </None>
     <None Include="purplecobrasDataSet.xss">
       <DependentUpon>purplecobrasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="purplecobrasDataSet1.xsc">
+      <DependentUpon>purplecobrasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="purplecobrasDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>purplecobrasDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="purplecobrasDataSet1.xss">
+      <DependentUpon>purplecobrasDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

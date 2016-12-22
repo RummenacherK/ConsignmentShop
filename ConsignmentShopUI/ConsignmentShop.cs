@@ -110,7 +110,7 @@ namespace ConsignmentShopUI
             {
                 item.Sold = true;
                 item.Owner.PaymentDue += (decimal)item.Owner.Commission * item.Price;
-                storeProfit += (1 - (decimal)item.Owner.Commission * item.Price);
+                storeProfit += ((decimal)item.Owner.Commission * item.Price);
             }
 
             shoppingCartData.Clear();
@@ -134,6 +134,18 @@ namespace ConsignmentShopUI
             this.Validate();
             this.budgetBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.purplecobrasDataSet);
+
+        }
+
+        private void ConsignmentShop_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'purplecobrasDataSet1.Trump' table. You can move, or remove it, as needed.
+            this.trumpTableAdapter.Fill(this.purplecobrasDataSet1.Trump);
+
+        }
+
+        private void shoppingCartListboxLabel_Click(object sender, EventArgs e)
+        {
 
         }
     }
